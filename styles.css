@@ -1,0 +1,12 @@
+/* Farvepalette */
+html {
+  --color1: #e782a9;
+  --color2: #233249;
+  --color3: #ffffff;
+  --color4: #ea5045;
+  --color5: #dfe0e4;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
