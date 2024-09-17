@@ -242,10 +242,36 @@ footer .logo {
   outline: none;
 }
 
+.omos {
+  text-align: center;
+}
+
+.tekstomos {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.tekstomos2 {
+  font-size: small;
+  text-align: center;
+}
+
+.findvej, .Kontakt {
+  padding-top: 30px;
+  margin-left: 10px;
+}
+
+
+
 /* mobile */
 @media (max-width: 814px) {
   nav {
     display: contents;
+  }
+
+  .omos {
+    text-align: center;
   }
 
   .menu-button-container {
