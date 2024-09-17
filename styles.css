@@ -262,7 +262,9 @@ footer .logo {
   margin-left: 10px;
 }
 
-
+.hr1, .hr2 {
+  color: #ea5045;
+}
 
 /* mobile */
 @media (max-width: 814px) {
