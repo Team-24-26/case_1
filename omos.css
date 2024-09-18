@@ -1,0 +1,8 @@
+@media (min-width: 814px) {
+
+.billeder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 4em;
+    gap: 2em;
+  } }
