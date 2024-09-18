@@ -162,6 +162,9 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 40px;
   margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .container .blok {
   background: #f8f4f4;
@@ -176,6 +179,39 @@ img {
 }
 .container h2 {
   font-size: 15px;
+}
+.container a {
+  color: #212121;
+  text-decoration: none;
+  color: inherit;
+}
+.blok {
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.blok:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.blok svg {
+  transition: fill 0.3s ease;
+}
+
+.blok:hover svg {
+  fill: #e1e7ef; /* Change SVG color on hover */
+}
+
+.blok h2 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
 }
 
 /*Billede_Video*/
@@ -293,12 +329,14 @@ footer .logo {
   text-align: center;
 }
 
-.findvej, .Kontakt {
+.findvej,
+.Kontakt {
   padding-top: 30px;
   margin-left: 10px;
 }
 
-.hr1, .hr2 {
+.hr1,
+.hr2 {
   color: #ea5045;
 }
 
