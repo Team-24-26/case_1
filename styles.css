@@ -150,12 +150,33 @@ img {
 
   padding: 0 40px; /* Ekstra plads på siderne i paragrafen */
 }
-
-.categories {
+.textcontainer .categories {
   margin: 2.5em;
 }
+.button-link {
+  margin: 2.5em;
+  display: inline-block;
+  padding: 10px 20px;
+  color: var(--color3);
+  background-color: var(--color2);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.button-link:hover {
+  background-color: var(--color1);
+  color: var(--color3);
+  border-color: var(--color1);
+}
+/* kategorier  */
 .categories h2 {
   font-size: 35px;
+  margin: 40px;
 }
 .container {
   display: grid;
@@ -168,7 +189,7 @@ img {
 }
 .container .blok {
   background: #f8f4f4;
-  padding: 40px;
+  padding: 45px;
   font-size: 13px;
   font-weight: 300;
   border-right: 10px;
@@ -186,7 +207,7 @@ img {
   color: inherit;
 }
 .blok {
-  width: 300px;
+  width: 200px;
   margin: 20px;
   text-align: center;
   border: 1px solid #ddd;
