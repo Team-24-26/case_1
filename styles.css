@@ -122,24 +122,117 @@ nav {
 img {
   max-width: 100%;
 }
+
+.text-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .hero h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin: 24px;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  color: #555;
+  margin: 10px 0 0;
+}
+
+.hero p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+  max-width: 700px;
+
+  padding: 0 40px; /* Ekstra plads på siderne i paragrafen */
+}
+.textcontainer .categories {
+  margin: 2.5em;
+}
+.button-link {
+  margin: 2.5em;
+  display: inline-block;
+  padding: 10px 20px;
+  color: var(--color3);
+  background-color: var(--color2);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.button-link:hover {
+  background-color: var(--color1);
+  color: var(--color3);
+  border-color: var(--color1);
+}
+/* kategorier  */
+.categories h2 {
+  font-size: 35px;
+  margin: 40px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 40px;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.container .blok {
+  background: #f8f4f4;
+  padding: 45px;
+  font-size: 13px;
+  font-weight: 300;
+  border-right: 10px;
+  border-radius: 7px;
+  color: #212121;
+  font-weight: 400;
+  font-style: normal;
+}
+.container h2 {
+  font-size: 15px;
+}
+.container a {
+  color: #212121;
+  text-decoration: none;
+  color: inherit;
+}
+.blok {
+  width: 300px;
+  margin: 20px;
   text-align: center;
-  font-size: 5em;
-  color: #ffffff;
-  background-color: #233249;
-  padding: 75px;
-  border-top: 2px solid red;
-  border-bottom: 2px solid red;
-  margin: 0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.hero p,
-h2 {
-  margin: 1.5em;
+.blok:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
 }
 
-.categories {
-  margin: 1.5em;
+.blok svg {
+  transition: fill 0.3s ease;
+}
+
+.blok:hover svg {
+  fill: #e1e7ef; /* Change SVG color on hover */
+}
+
+.blok h2 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
 }
 
 /*Billede_Video*/
@@ -242,10 +335,40 @@ footer .logo {
   outline: none;
 }
 
+.omos {
+  text-align: center;
+}
+
+.tekstomos {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.tekstomos2 {
+  font-size: small;
+  text-align: center;
+}
+
+.findvej,
+.Kontakt {
+  padding-top: 30px;
+  margin-left: 10px;
+}
+
+.hr1,
+.hr2 {
+  color: #ea5045;
+}
+
 /* mobile */
 @media (max-width: 814px) {
   nav {
     display: contents;
+  }
+
+  .omos {
+    text-align: center;
   }
 
   .menu-button-container {

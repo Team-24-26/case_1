@@ -1,39 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tech & StoryLab</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <section class="top-nav">
-        <a href="index.html" class="logo-container">
-          <img src="img/KEA_logo_DK_Web.jpg" alt="Logo" class="logo" />
-        </a>
-        <input id="menu-toggle" type="checkbox" />
-        <label class="menu-button-container" for="menu-toggle">
-          <div class="menu-button"></div>
-        </label>
-        <nav>
-          <ul class="menu">
-            <li><a href="">Forside</a></li>
-            <li><a href="">Faciliteter</a></li>
-            <li><a href="index.html"></a>Udstyr</li>
-            <li><a href=""></a>Kontakt</li>
-          </ul>
-        </nav>
-      </section>
-    </header>
-    <main>
-      <section class="hero">
-        <img src="img/tech-story-lab-3-bred.jpg.webp" alt="" class="hero" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech & StoryLab</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="kategori.css">
+  <link rel="stylesheet" href="hover.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <section class="top-nav">
+      <a href="index.html" class="logo-container">
+        <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 173.9 96.28">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: #ea5045;
+              }
+
+              .cls-2 {
+                fill: red;
+              }
+            </style>
+          </defs>
+          <path class="cls-1"
+            d="M0,0v96.28h173.9V0H0ZM59.96,80.7l-6.25-16.91c-.62-1.66-1.14-3.31-1.57-4.97h-3.72v21.88h-8.82V21.85h8.82v22.15h3.67c.38-1.66.91-3.4,1.62-5.14l6.77-17h9.92l-8.34,21.19c-1.33,3.4-2,5.49-2,7.67s.67,4.27,2,7.76l8.63,22.23h-10.73,0ZM98.87,80.7h-16.73c-5.43,0-7.63-5.23-7.63-13.51v-31.82c0-8.28,2.19-13.51,7.63-13.51h16.5v14.39h-15.3v7.85h14.21v14.39h-14.21v7.85h15.54v14.39-.03ZM125.28,80.7l-1.48-9.94h-11.3l-1.53,9.94h-9.01l8.3-49.52c1.19-7.24,4.53-10.64,7.87-10.64s6.67,3.4,7.87,10.64l8.3,49.52h-9.02Z" />
+          <path class="cls-2"
+            d="M118.17,35.01c-.19,0-.29.26-.38.87l-3.1,20.49h6.91l-3.05-20.49c-.1-.61-.19-.87-.38-.87Z" />
+        </svg>
+      </a>
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+      <nav>
+        <ul class="menu">
+          <li><a href="">Forside</a></li>
+          <li><a href="">Faciliteter</a></li>
+          <li><a href="index.html"></a>Udstyr</li>
+          <li><a href=""></a>Kontakt</li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+  <main>
+    <section class="hero">
+      <img src="img/tech-story-lab-3-bred.jpg.webp" alt="" class="hero" />
+      <div class="text-container">
         <h1>Tech & Story Lab</h1>
-        <h2>
-          Tech & Story Lab er et lab med fokus på ny teknologi for KEAs
-          studerende, undervisere og øvrige ansatte. 
-        </h2>
+
         <p>
           I Tech & Story Lab kan du eksperimentere med ny teknologi og på egen
           hånd lære at arbejde med forskelligt udstyr. Vi har alt lige fra
@@ -41,50 +60,190 @@
           RaspberryPi’s og meget mere. Du kan låne et stort udvalg af udstyr og
           få kyndig vejledning i brugen af det. 
         </p>
-      </section>
-      <section class="categories">
-        <h2>Kategorier</h2>
-        <div></div>
-      </section>
-    </main>
-    <footer>
-      <section class="footer">
-        <div>
-          <img src="img/KEA_logo_DK_Web.jpg" alt="" />
-          <h3>KEA - Københavns Ehversakademi</h3>
-          <p>
-            Guldbergsgade 29N <br />
-            2200 København N <br /><br />
-          </p>
-        </div>
-        <div>
-          <h3>Genveje</h3>
+        <a href="omos.html" class="button-link">OM OS</a>
 
-          <ul>
-            <li><a href="">Forside</a></li>
-            <li><a href="">Faciliteter</a></li>
-            <li><a href="index.html"></a>Udstyr</li>
-            <li><a href=""></a>Kontakt</li>
-          </ul>
+      </div>
+    </section>
+    <section class="categories">
+      <h2>Kategorier</h2>
+      <div class="container">
+
+        <div class="blok">
+          <a href="billede_video.html">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50" color="#000000"
+                fill="none">
+                <path
+                  d="M2 11C2 7.70017 2 6.05025 3.02513 5.02513C4.05025 4 5.70017 4 9 4H10C13.2998 4 14.9497 4 15.9749 5.02513C17 6.05025 17 7.70017 17 11V13C17 16.2998 17 17.9497 15.9749 18.9749C14.9497 20 13.2998 20 10 20H9C5.70017 20 4.05025 20 3.02513 18.9749C2 17.9497 2 16.2998 2 13V11Z"
+                  stroke="currentColor" stroke-width="1.5" />
+                <path
+                  d="M17 8.90585L17.1259 8.80196C19.2417 7.05623 20.2996 6.18336 21.1498 6.60482C22 7.02628 22 8.42355 22 11.2181V12.7819C22 15.5765 22 16.9737 21.1498 17.3952C20.2996 17.8166 19.2417 16.9438 17.1259 15.198L17 15.0941"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                <circle cx="11.5" cy="9.5" r="1.5" stroke="currentColor" stroke-width="1.5" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50" color="#000000"
+                fill="none">
+                <path
+                  d="M7.00018 6.00055C5.77954 6.00421 5.10401 6.03341 4.54891 6.2664C3.77138 6.59275 3.13819 7.19558 2.76829 7.96165C2.46636 8.58693 2.41696 9.38805 2.31814 10.9903L2.1633 13.501C1.91757 17.4854 1.7947 19.4776 2.96387 20.7388C4.13303 22 6.10271 22 10.0421 22H13.9583C17.8977 22 19.8673 22 21.0365 20.7388C22.2057 19.4776 22.0828 17.4854 21.8371 13.501L21.6822 10.9903C21.5834 9.38805 21.534 8.58693 21.2321 7.96165C20.8622 7.19558 20.229 6.59275 19.4515 6.2664C18.8964 6.03341 18.2208 6.00421 17.0002 6.00055"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                <path
+                  d="M17 7L16.1142 4.78543C15.732 3.82996 15.3994 2.7461 14.4166 2.25955C13.8924 2 13.2616 2 12 2C10.7384 2 10.1076 2 9.58335 2.25955C8.6006 2.7461 8.26801 3.82996 7.88583 4.78543L7 7"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M15.5 14C15.5 15.933 13.933 17.5 12 17.5C10.067 17.5 8.5 15.933 8.5 14C8.5 12.067 10.067 10.5 12 10.5C13.933 10.5 15.5 12.067 15.5 14Z"
+                  stroke="currentColor" stroke-width="1.5" />
+                <path d="M11.9998 6H12.0088" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h2>Billede / Video</h2>
+
+          </a>
         </div>
 
-        <div>
-          <h3>Sociale Medier</h3>
-          <a href="index.html" class="logo-container">
-            <img src="img/facebook (1).png" alt="Logo" class="logo" />
-          </a>
-          <a href="index.html" class="logo-container">
-            <img src="img/instagram.png" alt="Logo" class="logo" />
+        <div class="blok">
+          <a href="billede_video.html">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50" color="#000000"
+                fill="none">
+                <path
+                  d="M20.5 16.9286V10C20.5 6.22876 20.5 4.34315 19.3284 3.17157C18.1569 2 16.2712 2 12.5 2H11.5C7.72876 2 5.84315 2 4.67157 3.17157C3.5 4.34315 3.5 6.22876 3.5 10V19.5"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M20.5 17H6C4.61929 17 3.5 18.1193 3.5 19.5C3.5 20.8807 4.61929 22 6 22H20.5"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M20.5 22C19.1193 22 18 20.8807 18 19.5C18 18.1193 19.1193 17 20.5 17" stroke="currentColor"
+                  stroke-width="1.5" stroke-linecap="round" />
+                <path
+                  d="M12.3077 12L10.847 7.47891C10.7552 7.19466 10.4734 7 10.1538 7C9.83425 7 9.55249 7.19466 9.46066 7.47891L8 12M15 7V12M8.53846 10.5H11.7692"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h2>Kunstig intellegens</h2>
           </a>
         </div>
-        <div>
-          <h3>Tilmeld dig vores nyhedsbrev!</h3>
-          <form class="newsletter-form">
-            <input type="email" placeholder="Indtast din e-mail" required />
-            <button type="submit">Tilmeld</button>
-          </form>
+        <div class="blok">
+          <a href="billede_video.html">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50" color="#000000"
+                fill="none">
+                <path
+                  d="M20.3584 13.3567C19.1689 14.546 16.9308 14.4998 13.4992 14.4998C11.2914 14.4998 9.50138 12.7071 9.50024 10.4993C9.50024 7.07001 9.454 4.83065 10.6435 3.64138C11.8329 2.45212 12.3583 2.50027 17.6274 2.50027C18.1366 2.49809 18.3929 3.11389 18.0329 3.47394L15.3199 6.18714C14.6313 6.87582 14.6294 7.99233 15.3181 8.68092C16.0068 9.36952 17.1234 9.36959 17.8122 8.68109L20.5259 5.96855C20.886 5.60859 21.5019 5.86483 21.4997 6.37395C21.4997 11.6422 21.5479 12.1675 20.3584 13.3567Z"
+                  stroke="currentColor" stroke-width="1.5" />
+                <path
+                  d="M13.5 14.5L7.32842 20.6716C6.22386 21.7761 4.433 21.7761 3.32843 20.6716C2.22386 19.567 2.22386 17.7761 3.32843 16.6716L9.5 10.5"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M5.50896 18.5H5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h2>IT-Udstyr</h2>
+          </a>
         </div>
-      </section>
-    </footer>
-  </body>
+        <div class="blok">
+          <a href="billede_video.html">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="50" height="50"
+                stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="50" height="50"
+                stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+              </svg>
+
+            </div>
+            <h2>Lyd / Lys</h2>
+          </a>
+        </div>
+        <div class="blok">
+          <a href="billede_video.html">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50" color="#000000"
+                fill="none">
+                <path d="M4.5 21.5L8.5 17.5M10.5 17.5L14.5 21.5M9.5 17.5L9.5 22.5" stroke="currentColor"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M2 11.875C2 9.81261 2 8.78141 3.02513 8.1407C4.05025 7.5 5.70017 7.5 9 7.5H10C13.2998 7.5 14.9497 7.5 15.9749 8.1407C17 8.78141 17 9.81261 17 11.875V13.125C17 15.1874 17 16.2186 15.9749 16.8593C14.9497 17.5 13.2998 17.5 10 17.5H9C5.70017 17.5 4.05025 17.5 3.02513 16.8593C2 16.2186 2 15.1874 2 13.125V11.875Z"
+                  stroke="currentColor" stroke-width="1.5" />
+                <path
+                  d="M17 10.2495L17.1259 10.174C19.2417 8.90435 20.2996 8.26954 21.1498 8.57605C22 8.88257 22 9.89876 22 11.9312V13.0685C22 15.1009 22 16.1171 21.1498 16.4236C20.2996 16.7301 19.2417 16.0953 17.1259 14.8257L17 14.7501"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                <circle cx="12.5" cy="5" r="2.5" stroke="currentColor" stroke-width="1.5" />
+                <circle cx="7" cy="4.5" r="3" stroke="currentColor" stroke-width="1.5" />
+              </svg>
+            </div>
+            <h2>Studios</h2>
+          </a>
+        </div>
+        <div class="blok">
+          <a href="">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50" color="#000000"
+                fill="none">
+                <path
+                  d="M6.19351 11.3965L12.192 3.31186C12.6611 2.67957 13.5405 3.07311 13.5405 3.91536V10.1729C13.5405 10.6775 13.8853 11.0865 14.3107 11.0865H17.2283C17.891 11.0865 18.2443 12.0134 17.8065 12.6035L11.808 20.6881C11.3389 21.3204 10.4595 20.9269 10.4595 20.0846V13.8271C10.4595 13.3225 10.1147 12.9135 9.68931 12.9135H6.77173C6.10895 12.9135 5.75566 11.9866 6.19351 11.3965Z"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50" color="#000000"
+                fill="none">
+                <path d="M14 8V11M10 11V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M8.00297 12.0267C7.95812 11.4726 8.42638 11 9.02009 11H14.9799C15.5736 11 16.0419 11.4726 15.997 12.0267L15.8745 13.5403C15.7864 14.6285 15.4008 15.6771 14.7546 16.5856L14.3541 17.1487C13.9759 17.6805 13.3385 18 12.6558 18H11.3442C10.6615 18 10.0241 17.6805 9.64588 17.1487L9.24535 16.5856C8.59923 15.6771 8.2136 14.6285 8.12551 13.5403L8.00297 12.0267Z"
+                  stroke="currentColor" stroke-width="1.5" />
+                <path
+                  d="M16 21.2109C19.5318 19.6644 22 16.1323 22 12.0224C22 6.4872 17.5228 2 12 2C6.47715 2 2 6.4872 2 12.0224C2 17.2199 5.94741 21.4933 11.0014 21.9955C11.551 22.0501 12 21.5962 12 21.0426V18.0359"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h2>Kabler / Adaptere</h2>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="footer">
+      <div>
+        <img src="img/KEA_logo_DK_Web.jpg" alt="" />
+        <h3>KEA - Københavns Ehversakademi</h3>
+        <p>
+          Guldbergsgade 29N <br />
+          2200 København N <br /><br />
+        </p>
+      </div>
+      <div>
+        <h3>Genveje</h3>
+
+        <ul>
+          <li><a href="">Forside</a></li>
+          <li><a href="">Faciliteter</a></li>
+          <li><a href="index.html"></a>Udstyr</li>
+          <li><a href=""></a>Kontakt</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Sociale Medier</h3>
+        <a href="index.html" class="logo-container">
+          <img src="img/facebook (1).png" alt="Logo" class="logo" />
+        </a>
+        <a href="index.html" class="logo-container">
+          <img src="img/instagram.png" alt="Logo" class="logo" />
+        </a>
+      </div>
+      <div>
+        <h3>Tilmeld dig vores nyhedsbrev!</h3>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Indtast din e-mail" required />
+          <button type="submit">Tilmeld</button>
+        </form>
+      </div>
+    </section>
+  </footer>
+</body>
+
 </html>
