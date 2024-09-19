@@ -1,4 +1,8 @@
-const url = "https://epbwebmwtbqqnqduwafj.supabase.co/rest/v1/TSL?limit=10";
+const params = new URLSearchParams(document.location.search);
+const category = params.get("category");
+console.log(category);
+const url = `https://epbwebmwtbqqnqduwafj.supabase.co/rest/v1/TSL?category.cs${category}`;
+// const url = `https://epbwebmwtbqqnqduwafj.supabase.co/rest/v1/TSL?Type=eq.${category}`;
 const key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVwYndlYm13dGJxcW5xZHV3YWZqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjU5Njg2NDIsImV4cCI6MjA0MTU0NDY0Mn0.gqXIcmoXG6je8gxUzab9fsssLLOVFNJVekbH0Ki1YBc";
 
 const options = {
@@ -13,7 +17,7 @@ fetch(url, options)
 function vis(data) {
   //   looper kalder vis
   data.forEach((data) => {
-    console.log(data);
+    //  console.log(data.Type);
 
     //fanger template
     const template = document.querySelector("#smallProductTemplate").content;
