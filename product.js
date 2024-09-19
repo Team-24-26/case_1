@@ -17,18 +17,19 @@ function showProduct(product) {
 } */
 
 
+const URLParams = new URLSearchParams(window. location. search);
+const id = URLParams.get("id");
 const url = "https://epbwebmwtbqqnqduwafj.supabase.co/rest/v1/TSL";
 const key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVwYndlYm13dGJxcW5xZHV3YWZqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjU5Njg2NDIsImV4cCI6MjA0MTU0NDY0Mn0.gqXIcmoXG6je8gxUzab9fsssLLOVFNJVekbH0Ki1YBc";
 
-const URLParams = new URLSearchParams(window. location. search);
-const id = URLParams.get("id");
 
 const options = {
   headers: {
     apikey: key,
   },
 };
-fetch(url+id, options)
+
+fetch(url + id, options)
   .then((res) => res.json())
   .then(vis);
 
