@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tech og StoryLab</title>
+  <title>Billede & Video</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="product.css">
+  <link rel="stylesheet" href="produkter.css">
 </head>
 
 <body>
@@ -39,22 +39,79 @@
         <ul class="menu">
           <li><a href="index.html">Forside</a></li>
           <li><a href="omos.html">Om os</a></li>
+
         </ul>
       </nav>
     </section>
   </header>
   <main>
-    <section class="product">
-      <h1>Canon Kamera</h1>
-      <img src="img/canon.webp" alt="Canon kamera">
-      <p>Dette kamera leverer fremragende billedkvalitet og er perfekt til både amatører og professionelle.</p>
-      <button>Se ledighed</button>
+
+    <section class="subcategories">
+      <h1>Billede & Video</h1>
+
+
     </section>
+    <div class="product-card">
+
+      <h2>Produkter</h2>
+
+    </div>
+    <section class="grid_sec"></section>
 
 
   </main>
-  <footer></footer>
-  <script src="product.js"></script>
+  <footer>
+    <section class="footer">
+      <div>
+        <img src="img/KEA_logo_DK_Web.jpg" alt="" />
+        <h3>KEA - Københavns Ehversakademi</h3>
+        <p>
+          Guldbergsgade 29N <br />
+          2200 København N <br /><br />
+        </p>
+      </div>
+      <div>
+        <h3>Genveje</h3>
+
+        <ul>
+          <li><a href="">Forside</a></li>
+          <li><a href="">Faciliteter</a></li>
+          <li><a href="index.html"></a>Udstyr</li>
+          <li><a href=""></a>Kontakt</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Sociale Medier</h3>
+        <a href="index.html" class="logo-container">
+          <img src="img/facebook (1).png" alt="Logo" class="logo" />
+        </a>
+        <a href="index.html" class="logo-container">
+          <img src="img/instagram.png" alt="Logo" class="logo" />
+        </a>
+      </div>
+      <div>
+        <h3>Tilmeld dig vores nyhedsbrev!</h3>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Indtast din e-mail" required />
+          <button type="submit">Tilmeld</button>
+        </form>
+      </div>
+    </section>
+  </footer>
+  <script src="productlist.js"></script>
 </body>
+<template id="smallProductTemplate">
+  <div class="blok">
+    <article class="smallproduct">
+      <img src="img/canon.webp" alt="Canon">
+      <h3>Canon</h3>
+      <p>3070 70D</p>
+      <a href="" class="button-link">View Product</a>
+    </article>
+
+
+  </div>
+</template>
 
 </html>
