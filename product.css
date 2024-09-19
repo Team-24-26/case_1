@@ -1,0 +1,10 @@
+img{max-width: 60%;
+height: auto;
+margin-left: 20% ;
+}
+
+body{margin: 0 auto;}
+
+* {
+    box-sizing: border-box;
+  }
