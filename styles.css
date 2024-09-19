@@ -36,7 +36,7 @@ header li,
 a {
   text-decoration: none;
   font-size: 15px;
-  color: var(--color3);
+  color: var(--color2);
 }
 
 .top-nav {
@@ -238,6 +238,7 @@ img {
 /*Billede_Video*/
 .subcategories h1 {
   text-align: center;
+  font-size: 30px;
 }
 
 .subcategories ul {
@@ -250,9 +251,9 @@ img {
 }
 
 .subcategories li {
-  color: #ffffff;
+  color: var(--color2);
   margin: 0;
-  padding: 2em;
+  padding: 1em;
   overflow: hidden;
   display: flex;
   align-items: center;

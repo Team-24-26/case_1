@@ -42,48 +42,12 @@
     </section>
     <div class="product-card">
       <a href="product.html">
-        <h2>produktbeskrivelse</h2>
+        <h2>Produktbeskrivelse</h2>
       </a>
     </div>
-    <div class="slider-container">
-      <button class="slider-btn prev-btn">←</button>
-      <div class="slider-wrapper">
-        <div class="grid">
-          <article class="smallproduct">
-            <img src="img/canon.webp" alt="Canon">
-            <h3>Canon</h3>
-            <p>3070 70D</p>
-            <a href="product.html">View Product</a>
-          </article>
-          <article class="smallproduct">
-            <img src="img/canon.webp" alt="Canon">
-            <h3>Canon</h3>
-            <p>3070 70D</p>
-            <a href="product.html">View Product</a>
-          </article>
-          <article class="smallproduct">
-            <img src="img/canon.webp" alt="Canon">
-            <h3>Canon</h3>
-            <p>3070 70D</p>
-            <a href="product.html">View Product</a>
-          </article>
-          <article class="smallproduct">
-            <img src="img/canon.webp" alt="Canon">
-            <h3>Canon</h3>
-            <p>3070 70D</p>
-            <a href="product.html">View Product</a>
-          </article>
-          <article class="smallproduct">
-            <img src="img/canon.webp" alt="Canon">
-            <h3>Canon</h3>
-            <p>3070 70D</p>
-            <a href="product.html">View Product</a>
-          </article>
+    <section class="grid_sec"></section>
 
-        </div>
-      </div>
-      <button class="slider-btn next-btn">→</button>
-    </div>
+
   </main>
   <footer>
     <section class="footer">
@@ -127,5 +91,17 @@
   <script src="productlist.js"></script>
   <script src="slider.js"></script>
 </body>
+<template id="smallProductTemplate">
+  <div class="blok">
+    <article class="smallproduct">
+      <img src="img/canon.webp" alt="Canon">
+      <h3>Canon</h3>
+      <p>3070 70D</p>
+      <a href="" class="button-link">View Product</a>
+    </article>
+
+
+  </div>
+</template>
 
 </html>
